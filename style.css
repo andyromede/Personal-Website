@@ -92,8 +92,46 @@ div.main header h1 {
 
 div.main header p {
     position: relative;
+    display: block;
     text-align: center;
-    top: 70px
+    top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section.background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section.background::before {    
+    content: "";
+    background-image: url("images/pattern_japanese-pattern.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+section.background img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 337px;
+    object-fit: cover;
+    border: 10px solid white;
+    border-radius: 30px;
+    
+
 }
 @media(max-width: 700px){
     .nav-links ul li{
