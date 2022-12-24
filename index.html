@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -18,20 +17,18 @@
             <div class="nav-links">
                 <i class="fa fa-bars" onclick="toggleSideNav()"></i>
                 <ul>
-                    <li><a href="file:///C:/Users/Le/Personal%20Website/homepage.html">Home</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="https://github.com/andyromede">GitHub</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
         </nav>
         <nav>
             <div class="side-nav" id="sideNav">
                 <ul>
-                    <li><a href="file:///C:/Users/Le/Personal%20Website/homepage.html">Home</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="https://github.com/andyromede">GitHub</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,29 +41,52 @@
     <div class="main">
         <header>
             <h1>Andrew Le</h1>
-        
             <p>I am a Computer Science student at Rochester Institute of Technology,
              and I enjoy learning new skills to become the world's greatest software 
-             engineer.</p>
-             
+             engineer.</p> 
         </header>
-        
+
         <section class="background">
             <img src="images/portrait.jpg" alt="A picture of me at a waterfall">
         </section>
         
-        <article class="projects">
-            <h2>Projects and Intesting links</h2>
-            <section class="moviequery">
-                <h3>Movie Query September 2021</h3>
-                <img src="images/movie query.png" alt="picture of code for my movie query project">
-                <p>dlsakdjsalkjdlkasjdlkasjd</p>
-            </section>
-            <section class="lunarlanding">
-                <h3>Lunar Landing Novemeber 2021</h3>
-                <img src="images/Lunar Landing.png" alt="gamplay photo for lunar landing">
-                <p>fsadfdsafasdfdsfa</p>
-            </section>
+        <article class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="list">
+                <section class="moviequery">
+                    <h3>Movie Query September 2021</h3>
+                    <div class="block">
+                        <img src="images/movie query.png" alt="picture of code for my movie query project">
+                        <article class="textcontainer">
+                            <ul>
+                                <li>This project is coded in python and works with datasets from the IMDB website with over 9 million movies.</li>
+                                <li>Uses datastructures such as hashmaps to store, organize and effiently query for differnt kinds of information related to movies and their ratings.</li>
+                                <li>Quries such as Look Up, Contains, Year and Genre, runtime, and Votes are able to be preformed im under a thousanth of a second. </li>
+                                <li><a href="https://github.com/andyromede/Movies-1">
+                                    GitHub link: https://github.com/andyromede/Movies-1</a></li>
+                                
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+                <br>
+                <section class="lunarlanding">
+                    <h3>Lunar Landing Novemeber 2021</h3>
+                    <div class="block">
+                        <img src="images/Lunar Landing.png" alt="gamplay photo for lunar landing">
+                        <article class="textcontainer">
+                            <ul>
+                                <li>This project is based off a game called Lunar Landing which involves navigating the explorer back 
+                                    to his shuttle (middle of the grid) with the help of bumping into helper bots in its vicinity.</li>
+                                <li>Uses MVC model and implemented smart BFS backtracking solver to give user hints to solve the puzzle.</li>
+                                <li>Shows mastery of MVC model, Java, Object Oriented Programming, multifile programs, and attention to user experience.</li>
+                                <li><a href="https://github.com/andyromede/bfspuzzles-Lunar_Landing_and_Tip_Over-callbackcats">
+                                    GitHub link: https://github.com/andyromede/bfspuzzles-Lunar_Landing_and_Tip_Over-callbackcats</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </article>
        
       </div>
